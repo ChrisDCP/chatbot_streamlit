@@ -60,6 +60,6 @@ with texto_columna:
         trabajar con documentación en papel, es hora de pensar en implementar una aplicación en tu negocio para potenciar y optimizar el funcionamiento de los procesos diarias
         """
     )
-    st.write("[Ver servicios >](https://share.streamlit.io/user/diether28)")
+    st.write("[Ver servicios >](https://share.streamlit.io/galery)")
     
     with imagen_columna: st.image("img/diseno.png")
