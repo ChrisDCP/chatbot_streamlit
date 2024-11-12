@@ -3,7 +3,7 @@ import json
 import requests #pip install requests
 from streamlit_lottie import st_lottie # pip install streamlit-lottie
 #https://lottiefiles.com/
-#funcion lottie abrir un archivo
+
 def get(path:str):
     with open(path, "r") as p:
         return json.load(p)
