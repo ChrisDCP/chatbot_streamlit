@@ -52,7 +52,7 @@ with st.container():
 
     with R_columna:
  # Lottie desde archivo
-        url = get_url("https://lottie.host/8611e424-5454-46ef-acc1-dbe8a675c7ed/GenBO7VdIL.json")
+        url = get_url("https://lottie.host/e538cc90-5564-4d75-8acc-65234297e61c/QTMCbf0H9p.json")
         st_lottie(url)  # Lottie desde URL
 
 # Servicios
