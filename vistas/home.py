@@ -53,7 +53,7 @@ with st.container():
         st.write("[Más sobre nosotros >](https://streamlit.io/)")
 
     with R_columna:
-        path = get("./animacion/ani.json")
+        path = get("animacion/ani.json")
         st_lottie(path)  # Lottie desde archivo
         url = get_url("https://lottie.host/8611e424-5454-46ef-acc1-dbe8a675c7ed/GenBO7VdIL.json")
         st_lottie(url)  # Lottie desde URL
