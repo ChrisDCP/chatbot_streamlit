@@ -78,7 +78,7 @@ with st.container():
         st.write("---")
         imagen_columna, texto_columna = st.columns((1, 2))
         with imagen_columna:
-            st.image("img/diseno.jpg")
+            st.image("img/diseno.png")
         with texto_columna:
             st.subheader("Automatización de procesos")
             st.write(
