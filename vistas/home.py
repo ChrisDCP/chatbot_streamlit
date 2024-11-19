@@ -107,29 +107,15 @@ with st.container():
             st.write("[Ver servicios >](https://streamlit.io/)")
 
 # Contactos
-with st.container():
-    st.write("---")
-    c_columna, inf_columna = st.columns((1, 2))
-    with c_columna:
-        st.subheader("📧 Contactos")
-        # Formulario de contacto
-        contacto_form = """
-        <form action="https://formsubmit.co/manzanaresdionicio@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Escriba su nombre" required>
-        <input type="email" name="email" placeholder="nombre@email.com" required>
-        <textarea name="message" placeholder="Su mensaje"></textarea>
-        <button type="submit">Enviar...</button>
-        </form>
-        """
-        st.markdown(contacto_form, unsafe_allow_html=True)
+st.subheader("Contacto")
 
-# Archivo CSS
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}", unsafe_allow_html=True)
+form = st.form(key="home", clear_on_submit=True)
 
-local_css("css/style.css")  # Cargar CSS
+with form:
+    input_nombre = st. text_input("Nombre:", placeholder="Escriba su nombre")
+    input_email = st. text_input("correo electrónico:", placeholder="Escriba su correo electrónico")
+    input_area = st. text_input("Comentario:", placeholder="Comentario:")
+    button_submit = form.form_submit_button("Enviar")
 
 # Footer
 with st.container():
